@@ -1,0 +1,226 @@
+import requests
+from bs4 import BeautifulSoup
+
+page = requests.get('https://www.biznesradar.pl/stopy-zwrotu/indeks:WIG20,WIG')
+soup = BeautifulSoup(page.content, "html.parser")
+container = soup.find(class_="qTableFull")
+items = container.find_all('td')
+
+firstC = []
+secondC = []
+thirdC = []
+base = -10
+
+                                                                       # numer 1
+a_Name = items[0].get_text()
+a_1M = items[2].get_text()
+a_3M = items[3].get_text()
+a_1 = a_Name.strip()
+a_2 = float(a_1M[:-1])
+a_3 = float(a_3M[:-1])
+
+print(a_1)
+print(a_2)
+print(a_3)
+
+if a_2 < base or a_3 < base:
+    firstC.append(a_1)
+    secondC.append(a_2)
+    thirdC.append(a_3)
+else:
+    print("alior ok")
+
+                                                                        # numer 2
+b_Name = items[11].get_text()
+b_1M = items[13].get_text()
+b_3M = items[14].get_text()
+b_1 = b_Name.strip()
+b_2 = float(b_1M[:-1])
+b_3 = float(b_3M[:-1])
+
+print(b_1)
+print(b_2)
+print(b_3)
+
+if b_2 < base or b_3 < base:
+    firstC.append(b_1)
+    secondC.append(b_2)
+    thirdC.append(b_3)
+else:
+    print("alior ok")
+
+                                                                        # numer 3
+c_Name = items[22].get_text()
+c_1M = items[24].get_text()
+c_3M = items[25].get_text()
+c_1 = c_Name.strip()
+c_2 = float(c_1M[:-1])
+c_3 = float(c_3M[:-1])
+
+print(c_1)
+print(c_2)
+print(c_3)
+
+if c_2 < base or c_3 < base:
+    firstC.append(c_1)
+    secondC.append(c_2)
+    thirdC.append(c_3)
+else:
+    print("alior ok")
+                                                                        # numer 4
+d_Name = items[33].get_text()
+d_1M = items[35].get_text()
+d_3M = items[36].get_text()
+d_1 = d_Name.strip()
+d_2 = float(d_1M[:-1])
+d_3 = float(d_3M[:-1])
+
+print(d_1)
+print(d_2)
+print(d_3)
+
+if d_2 < base or d_3 < base:
+    firstC.append(d_1)
+    secondC.append(d_2)
+    thirdC.append(d_3)
+else:
+    print("alior ok")
+
+                                                                        # numer 5
+e_Name = items[44].get_text()
+e_1M = items[46].get_text()
+e_3M = items[47].get_text()
+e_1 = e_Name.strip()
+e_2 = float(e_1M[:-1])
+e_3 = float(e_3M[:-1])
+
+print(e_1)
+print(e_2)
+print(e_3)
+
+if e_2 < base or e_3 < base:
+    firstC.append(e_1)
+    secondC.append(e_2)
+    thirdC.append(e_3)
+else:
+    print("alior ok")
+
+                                                                        # numer 6
+f_Name = items[55].get_text()
+f_1M = items[57].get_text()
+f_3M = items[58].get_text()
+f_1 = f_Name.strip()
+f_2 = float(f_1M[:-1])
+f_3 = float(f_3M[:-1])
+
+print(f_1)
+print(f_2)
+print(f_3)
+
+if f_2 < base or f_3 < base:
+    firstC.append(f_1)
+    secondC.append(f_2)
+    thirdC.append(f_3)
+else:
+    print("alior ok")
+
+                                                                        # numer 7
+g_Name = items[66].get_text()
+g_1M = items[68].get_text()
+g_3M = items[69].get_text()
+g_1 = g_Name.strip()
+g_2 = float(g_1M[:-1])
+g_3 = float(g_3M[:-1])
+
+print(g_1)
+print(g_2)
+print(g_3)
+
+if g_2 < base or g_3 < base:
+    firstC.append(g_1)
+    secondC.append(g_2)
+    thirdC.append(g_3)
+else:
+    print("alior ok")
+
+                                                                        # numer 8
+h_Name = items[77].get_text()
+h_1M = items[79].get_text()
+h_3M = items[80].get_text()
+h_1 = h_Name.strip()
+h_2 = float(h_1M[:-1])
+h_3 = float(h_3M[:-1])
+
+print(h_1)
+print(h_2)
+print(h_3)
+
+if h_2 < base or h_3 < base:
+    firstC.append(h_1)
+    secondC.append(h_2)
+    thirdC.append(h_3)
+else:
+    print("alior ok")
+
+                                                                        # numer 9
+i_Name = items[88].get_text()
+i_1M = items[90].get_text()
+i_3M = items[91].get_text()
+i_1 = i_Name.strip()
+i_2 = float(i_1M[:-1])
+i_3 = float(i_3M[:-1])
+
+print(i_1)
+print(i_2)
+print(i_3)
+
+if i_2 < base or i_3 < base:
+    firstC.append(i_1)
+    secondC.append(i_2)
+    thirdC.append(i_3)
+else:
+    print("alior ok")
+
+                                                                        # numer 10
+j_Name = items[99].get_text()
+j_1M = items[101].get_text()
+j_3M = items[102].get_text()
+j_1 = j_Name.strip()
+j_2 = float(j_1M[:-1])
+j_3 = float(j_3M[:-1])
+
+print(j_1)
+print(j_2)
+print(j_3)
+
+if j_2 < base or j_3 < base:
+    firstC.append(j_1)
+    secondC.append(j_2)
+    thirdC.append(j_3)
+else:
+    print("alior ok")
+
+                                                                        # numer 11
+k_Name = items[110].get_text()
+k_1M = items[112].get_text()
+k_3M = items[113].get_text()
+k_1 = k_Name.strip()
+k_2 = float(k_1M[:-1])
+k_3 = float(k_3M[:-1])
+
+print(k_1)
+print(k_2)
+print(k_3)
+
+if k_2 < base or k_3 < base:
+    firstC.append(k_1)
+    secondC.append(k_2)
+    thirdC.append(k_3)
+else:
+    print("alior ok")
+
+
+
+print(firstC)
+print(secondC)
+print(thirdC)
