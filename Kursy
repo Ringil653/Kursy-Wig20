@@ -276,6 +276,45 @@ if n_2 < base or n_3 < base:
 else:
     print("alior ok")
 
+                                                                        # numer 15
+o_Name = items[154].get_text()
+o_1M = items[156].get_text()
+o_3M = items[157].get_text()
+o_1 = o_Name.strip()
+o_2 = float(o_1M[:-1])
+o_3 = float(o_3M[:-1])
+
+print(o_1)
+print(o_2)
+print(o_3)
+
+if o_2 < base or o_3 < base:
+    firstC.append(o_1)
+    secondC.append(o_2)
+    thirdC.append(o_3)
+else:
+    print("alior ok")
+
+                                                                        # numer 16
+p_Name = items[165].get_text()
+p_1M = items[167].get_text()
+p_3M = items[168].get_text()
+p_1 = p_Name.strip()
+p_2 = float(p_1M[:-1])
+p_3 = float(p_3M[:-1])
+
+print(p_1)
+print(p_2)
+print(p_3)
+
+if p_2 < base or p_3 < base:
+    firstC.append(p_1)
+    secondC.append(p_2)
+    thirdC.append(p_3)
+else:
+    print("alior ok")
+
+
 print(firstC)
 print(secondC)
 print(thirdC)
