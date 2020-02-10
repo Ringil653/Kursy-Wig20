@@ -219,7 +219,62 @@ if k_2 < base or k_3 < base:
 else:
     print("alior ok")
 
+                                                                        # numer 12
+l_Name = items[121].get_text()
+l_1M = items[123].get_text()
+l_3M = items[124].get_text()
+l_1 = l_Name.strip()
+l_2 = float(l_1M[:-1])
+l_3 = float(l_3M[:-1])
 
+print(l_1)
+print(l_2)
+print(l_3)
+
+if l_2 < base or l_3 < base:
+    firstC.append(l_1)
+    secondC.append(l_2)
+    thirdC.append(l_3)
+else:
+    print("alior ok")
+
+                                                                        # numer 13
+m_Name = items[132].get_text()
+m_1M = items[134].get_text()
+m_3M = items[135].get_text()
+m_1 = m_Name.strip()
+m_2 = float(m_1M[:-1])
+m_3 = float(m_3M[:-1])
+
+print(m_1)
+print(m_2)
+print(m_3)
+
+if m_2 < base or m_3 < base:
+    firstC.append(m_1)
+    secondC.append(m_2)
+    thirdC.append(m_3)
+else:
+    print("alior ok")
+
+                                                                        # numer 14
+n_Name = items[143].get_text()
+n_1M = items[145].get_text()
+n_3M = items[146].get_text()
+n_1 = n_Name.strip()
+n_2 = float(n_1M[:-1])
+n_3 = float(n_3M[:-1])
+
+print(n_1)
+print(n_2)
+print(n_3)
+
+if n_2 < base or n_3 < base:
+    firstC.append(n_1)
+    secondC.append(n_2)
+    thirdC.append(n_3)
+else:
+    print("alior ok")
 
 print(firstC)
 print(secondC)
